@@ -17,7 +17,6 @@
 ## Решение:
 require 'digest'
 str = gets
-str = str.chop
 h = 0
 a = 1
 until h[0..4] == '00000'
