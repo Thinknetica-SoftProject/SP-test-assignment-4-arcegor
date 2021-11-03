@@ -24,5 +24,5 @@ until h[0..4] == '00000'
   h = Digest::MD5.hexdigest str1
   a += 1
 end
-puts a
+puts a-1
 
