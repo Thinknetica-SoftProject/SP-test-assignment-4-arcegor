@@ -16,7 +16,7 @@
 #
 ## Решение:
 require 'digest'
-str = gets
+str = gets.chop
 h = 0
 a = 1
 until h[0..4] == '00000'
@@ -24,5 +24,6 @@ until h[0..4] == '00000'
   h = Digest::MD5.hexdigest str1
   a += 1
 end
-puts a-1
+puts a - 1
+
 
