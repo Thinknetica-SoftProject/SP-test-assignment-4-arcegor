@@ -15,4 +15,13 @@
 #
 #
 ## Решение:
+require 'digest'
+str = gets
+h = 0
+a = 1
+until h[0..4] == '00000'
+  h = Digest::MD5.hexdigest str + String(a)
+  a += 1
+end
+puts a
 

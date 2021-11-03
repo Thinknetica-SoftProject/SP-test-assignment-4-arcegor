@@ -15,7 +15,17 @@
 #
 #
 ## Решение:
-
+str = File.readlines('data/1.txt')[0].chars
+k = 0
+str.each do |i|
+  case i
+  when '('
+    k += 1
+  when ')'
+    k -= 1
+  end
+end
+puts k
 
 
 

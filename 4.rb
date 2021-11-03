@@ -15,5 +15,12 @@
 #
 #
 ## Решение:
-
+temp = 0
+File.readlines('data/4.txt').each do |line|
+  line = line.split('x').map(&:to_i)
+  temp += 2 * line[0] * line[1] + 2 * line[1] * line[2] + 2 * line[0] * line[2] + [line[0] * line[1],
+                                                                                   line[1] * line[2],
+                                                                                   line[0] * line[2]].min
+end
+puts temp
 
